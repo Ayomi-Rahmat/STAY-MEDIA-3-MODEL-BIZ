@@ -1,1 +1,4 @@
 app/config/conn.php
+.env
+app/vendor
+app/vendor/
