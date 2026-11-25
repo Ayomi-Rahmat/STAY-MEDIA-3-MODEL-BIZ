@@ -1,5 +1,22 @@
 <?php
 
+function db_begin_transaction(PDO $pdo): void
+{
+  $pdo->beginTransaction();
+}
+
+function db_commit(PDO $pdo): void
+{
+  $pdo->commit();
+}
+
+function db_rollback(PDO $pdo): void
+{
+  if ($pdo->inTransaction()) {
+    $pdo->rollBack();
+  }
+}
+
 function addMinutes($minutes)
 {
   return date('Y-m-d H:i:s', time() + ($minutes * 60));
@@ -26,3 +43,5 @@ function randomTokenExtended($num = 8)
   }
   return implode($passw); //turn the array into a string
 }
+
+
