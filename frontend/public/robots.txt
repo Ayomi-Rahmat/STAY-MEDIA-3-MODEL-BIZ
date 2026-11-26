@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /register
+Disallow: /forgot-password
+Disallow: /verify-otp
+Disallow: /reset-password
+
+# Replace with the real domain before launch
+Sitemap: https://www.yourbrand.com/sitemap.xml

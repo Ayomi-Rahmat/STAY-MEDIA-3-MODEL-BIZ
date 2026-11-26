@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace yourbrand.com with the real domain before launch -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.yourbrand.com/</loc></url>
+  <url><loc>https://www.yourbrand.com/restaurant</loc></url>
+  <url><loc>https://www.yourbrand.com/hotel</loc></url>
+  <url><loc>https://www.yourbrand.com/club</loc></url>
+  <url><loc>https://www.yourbrand.com/gallery</loc></url>
+  <url><loc>https://www.yourbrand.com/about</loc></url>
+  <url><loc>https://www.yourbrand.com/contact</loc></url>
+  <url><loc>https://www.yourbrand.com/faq</loc></url>
+  <url><loc>https://www.yourbrand.com/blog</loc></url>
+  <url><loc>https://www.yourbrand.com/blog/healthy-eating-out-myth-or-reality</loc></url>
+  <url><loc>https://www.yourbrand.com/blog/is-eating-out-getting-healthier</loc></url>
+  <url><loc>https://www.yourbrand.com/blog/hot-chickpeas-flake-recipe</loc></url>
+  <url><loc>https://www.yourbrand.com/privacy</loc></url>
+  <url><loc>https://www.yourbrand.com/terms</loc></url>
+</urlset>

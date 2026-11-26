@@ -1,0 +1,13 @@
+# Dependencies and build output - never commit these
+node_modules
+dist
+
+# Local settings and secrets - every developer has their own
+.env
+.env.local
+.env.*.local
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.log

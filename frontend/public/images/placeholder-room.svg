@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a2a22" /><stop offset="1" stop-color="#16100d" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)" />
+  <g fill="none" stroke="#a66a1f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M110 190v-70m180 70v-70M110 160h180M110 190h180" />
+    <rect x="130" y="125" width="60" height="30" rx="8" />
+    <rect x="210" y="125" width="60" height="30" rx="8" />
+  </g>
+  <text x="200" y="250" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#8a7a6a">Add your room photo in public/images</text>
+</svg>

@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/*
+  THEME TOKENS
+  Every colour/font used on the site lives here once.
+  Tailwind turns each token into classes automatically:
+    --color-brand  ->  bg-brand, text-brand, border-brand ...
+    --font-heading ->  font-heading
+  To restyle the whole site later, change values here only.
+  (Values are eyeballed from the Sarab template; swap in exact hex codes
+   from the template's DevTools if you want pixel-perfect matching.)
+*/
+@theme {
+  --color-brand: #e8271c;
+  --color-brand-dark: #c81d12;
+  --color-flame: #f97316;
+  --color-accent: #f5a623;
+  --color-cream: #fff7f0;
+  --color-ink: #1a1a1a;
+  --color-forest: #2a5a44;
+  --color-sand: #f8f5f0;
+  --color-night: #181818;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+  --font-script: "Dancing Script", cursive;
+
+  /* Animations: used as  animate-marquee  and  animate-float */
+  --animate-marquee: marquee 35s linear infinite;
+  --animate-float: float 4s ease-in-out infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+/*
+  container-x = the page-width rule used by every section:
+  centred, never wider than 1140px (like the Sarab template), with side padding on phones.
+  Use it as a class:  <div className="container-x">
+*/
+@utility container-x {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1140px;
+  padding-inline: 1.5rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* People who ask their device for less motion get no animations. */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+    }
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+}
