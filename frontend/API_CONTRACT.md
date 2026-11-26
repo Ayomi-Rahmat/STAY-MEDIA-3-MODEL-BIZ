@@ -93,15 +93,6 @@ Success `200`: `{ "success": true, "message": "Logged out.", "data": {} }`
 
 ---
 
-## Open questions for the backend developer
-
-1. Token style: a JWT, or a random string stored in the database? (Either works with this contract.)
-   If you prefer PHP **sessions/cookies**, tell us - the frontend change is small.
-2. Can you email the 4-digit code from the first version, or should we plan for a delay?
-3. Final route names, if you want anything other than `/api/auth/...`.
-
----
-
 # Restaurant homepage endpoints
 
 Same conventions as above (`{success,message,data}` / `{success:false,message,errors}`). These need no login
